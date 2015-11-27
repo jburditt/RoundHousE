@@ -1,10 +1,10 @@
 Database Version Control
 
 Requirements:
-1. Rapid deployment
-2. Error handling
-3. SQL version controlled, commit code alongside SQL
-4. Database versioning
+*Rapid deployment
+*Error handling
+*SQL version controlled, commit code alongside SQL
+*Database versioning
 
 Nice to have:
 1. SQL linked to Jira issues
