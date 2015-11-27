@@ -8,31 +8,36 @@ Requirements
 * SQL version controlled, commit code alongside SQL
 * Database versioning
 
-Nice to have:
-1. SQL linked to Jira issues
-2. Bi-Directional
-3. Database recovery
-4. Backups on each minor version release
+Nice to have
+---
+* SQL linked to Jira issues
+* Bi-Directional
+* Database recovery
+* Backups on each minor version release
 
-Scenarios to consider:
-1. Upgrading a database with version 1.0.0 and upgrading a database with version 1.0.1 both with version 1.0.2
-2. Removing an update script
-3. Scripts with prerequisite scripts
-4. Removing a stored proc
+Scenarios to consider
+---
+* Upgrading a database with version 1.0.0 and upgrading a database with version 1.0.1 both with version 1.0.2
+* Removing an update script
+* Scripts with prerequisite scripts
+* Removing a stored proc
 
-How to downgrade (Does not work, needs revision):
-1. Retrieve previous SQL Database Project version
-2. SQL Data Tools Schema compare SQL Database Project to Target database
-3. Run update
+How to downgrade (Does not work, needs revision)
+---
+* Retrieve previous SQL Database Project version
+* SQL Data Tools Schema compare SQL Database Project to Target database
+* Run update
 
-Format:
-1. Do not use "USE"
-2. Onetime scripts do not need to be idempotent, anytime scripts do
-3. Filenames will be <DATE>_<OBJECTNAME>-<TOPIC>.sql e.g. 20151126_WNARCCartOrderList-Omniture.sql, 20151126-1_AlterWNShopCart.sql
-4. There is a separate folder for each database e.g. ARCTEMS, Arcteryx
+Format
+---
+* Do not use "USE"
+* Onetime scripts do not need to be idempotent, anytime scripts do
+* Filenames will be <DATE>_<OBJECTNAME>-<TOPIC>.sql e.g. 20151126_WNARCCartOrderList-Omniture.sql, 20151126-1_AlterWNShopCart.sql
+* There is a separate folder for each database e.g. ARCTEMS, Arcteryx
 
-Notes:
-1. Once you commit a onetime script, you cannot change it [or you will get an error]. Make a new script.
+Notes
+---
+Once you commit a onetime script, you cannot change it [or you will get an error]. Make a new script.
 
 
 Scripts in these folder will only run once (Onetime)
