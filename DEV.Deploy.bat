@@ -1,5 +1,7 @@
 @echo off
 
+Powershell.exe -File "./Increment Version.ps1"
+
 SET DIR=%~d0%~p0%
 
 SET database.name="DatabaseName"
