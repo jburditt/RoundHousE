@@ -1,3 +1,0 @@
-1. Create a list of scenarios with possible solutions for each
-2. Find a way to deal with scripts with "USE"
-3. Add source code to repository
